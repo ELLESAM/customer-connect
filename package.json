@@ -4,15 +4,16 @@
   "sideEffects": false,
   "type": "module",
  
- "scripts": {
-   "dev": "vite dev",
-   "generate-routes": "tsr generate",
-   "build": "npm run generate-routes && vite build",
-   "build:dev": "vite build --mode development",
-   "preview": "vite preview",
-   "lint": "eslint .",
-   "format": "prettier --write ."
+"scripts": {
+  "dev": "vite dev",
+  "generate-routes": "tsr generate",
+  "build": "npm run generate-routes && vite build",
+  "build:dev": "vite build --mode development",
+  "preview": "vite preview",
+  "lint": "eslint .",
+  "format": "prettier --write ."
 }
+"overrides": {
   
   "overrides": {
     "rolldown": "1.2.1"
