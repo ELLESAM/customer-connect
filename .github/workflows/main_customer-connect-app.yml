@@ -23,11 +23,14 @@ jobs:
         with:
           node-version: '24.x'
 
+
       - name: npm install, build, and test
         run: |
-          npm install
-          npm run build --if-present
-          npm run test --if-present
+            npm install
+              npm run build --if-present
+             echo "===== GENERATED ROUTES ====="
+             cat src/routeTree.gen.ts
+             npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
