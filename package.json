@@ -6,8 +6,7 @@
  
 "scripts": {
   "dev": "vite dev",
-  "generate-routes": "tsr generate",
-  "build": "npm run generate-routes && vite build",
+  "build": "vite build",
   "build:dev": "vite build --mode development",
   "preview": "vite preview",
   "lint": "eslint .",
@@ -18,7 +17,6 @@
     "rolldown": "1.2.1"
   },
   "dependencies": {
-    "@tanstack/router-cli": "^1.0.0",
     "@azure/identity": "^4.0.0",
     "mssql": "^11.0.0",
     "@hookform/resolvers": "^5.2.2",
